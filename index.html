@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rahul – DevOps &amp; Cloud Engineer</title>
+<meta name="description" content="Senior System Engineer with 6+ years in IT and nearly 4 in DevOps. AWS, Kubernetes, Terraform, CI/CD and observability.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%99%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#eef2f5;--ink:#13233a;--muted:#4d5d72;--line:#c3cedb;--accent:#0a6a96;--card:#f8fafc;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--paper:#0f1a2a;--ink:#e6edf5;--muted:#9fb0c4;--line:#2a3b52;--accent:#5cb8e6;--card:#15243a}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+main,header,footer{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0}
+h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:700;letter-spacing:-.02em}
+h2{font-size:1.7rem;font-weight:700;margin-bottom:1.25rem}
+h3{font-size:1.15rem;font-weight:500}
+section{padding:3.5rem 0 0}
+p{max-width:40rem;margin:.75rem 0 0}
+.muted{color:var(--muted)}
+nav{display:flex;gap:1.5rem;flex-wrap:wrap;padding:1.5rem 0}
+nav a{color:var(--ink);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--accent);text-decoration:underline}
+.hero{padding:3rem 0 0}
+.hero .role{font-size:1.35rem;margin-top:1rem;font-family:"Bricolage Grotesque",sans-serif;font-weight:500}
+.links{display:flex;gap:1.25rem;flex-wrap:wrap;margin-top:1.5rem;font-weight:500}
+/* pipeline */
+.pipe{list-style:none;margin:2rem 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.pipe li{position:relative;padding:2rem .9rem 0 0}
+.pipe li::before{content:"";position:absolute;top:.55rem;left:0;right:0;height:2px;background:var(--line)}
+.pipe li::after{content:"";position:absolute;top:0;left:0;width:1.1rem;height:1.1rem;border-radius:50%;background:var(--accent);border:3px solid var(--paper)}
+.pipe h3{font-size:1.05rem}
+.pipe p{margin:.35rem 0 0;font-size:.95rem;color:var(--muted)}
+.scripts{margin-top:1.5rem}
+/* cards */
+.item{border-top:1px solid var(--line);padding:1.25rem 0}
+.item:last-child{border-bottom:1px solid var(--line)}
+.item .meta{color:var(--muted);font-size:.95rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1.1rem 1.2rem}
+.card p{font-size:.95rem}
+.todo{color:var(--muted);font-style:italic}
+footer{padding:4rem 1.5rem 3rem;color:var(--muted);font-size:.95rem}
+@media (max-width:42rem){
+  .pipe{grid-template-columns:1fr}
+  .pipe li{padding:0 0 1.5rem 2rem}
+  .pipe li::before{top:0;bottom:0;left:.5rem;right:auto;width:2px;height:auto}
+  .pipe li::after{top:.2rem}
+}
+</style>
+</head>
+<body>
+<header>
+  <nav aria-label="Primary">
+    <a href="#stack">Stack</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="hero">
+    <h1>Rahul</h1>
+    <div class="role">DevOps and cloud engineer, Kochi, India</div>
+    <p>I build and run AWS and Kubernetes platforms. Over 6 years in IT, nearly 4 of them in DevOps, working on infrastructure as code, CI/CD pipelines and monitoring.</p>
+    <div class="links">
+      <a href="mailto:YOUR-EMAIL@example.com">Email</a>
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
+      <a href="https://github.com/YOUR-GITHUB-USERNAME">GitHub</a>
+      <a href="rahul_resume.pdf">Résumé (PDF)</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="stack">
+    <h2>How a change reaches production</h2>
+    <p class="muted">The tools I use at each stage.</p>
+    <ol class="pipe">
+      <li><h3>Provision</h3><p>Terraform, Ansible, AWS VPC and IAM</p></li>
+      <li><h3>Build</h3><p>Docker, Jenkins, GitHub Actions, GitLab CI/CD</p></li>
+      <li><h3>Deploy</h3><p>Kubernetes on-prem and EKS, Helm, ECS</p></li>
+      <li><h3>Run</h3><p>EC2, ELB, RDS, S3, Route 53</p></li>
+      <li><h3>Observe</h3><p>Grafana, EFK stack, CloudWatch</p></li>
+    </ol>
+    <p class="scripts muted">Automation in Bash and Python.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="item">
+      <h3>Senior System Engineer, Urolime Technologies</h3>
+      <div class="meta">Infopark, Kochi</div>
+      <p class="todo">Add 2–3 outcomes here: what you built, the scale it ran at, and the result (for example, deployment time, uptime or cost).</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="card"><h3>Project name</h3><p class="todo">One line on the problem, one on what you built, one on the result. Link to the repository.</p></article>
+      <article class="card"><h3>Project name</h3><p class="todo">Good candidates: a Terraform module, a Helm chart, a CI/CD template or a monitoring setup.</p></article>
+      <article class="card"><h3>Project name</h3><p class="todo">Keep sensitive client details out; describe the pattern, not the system.</p></article>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="item"><h3>AWS Certified Solutions Architect – Associate</h3></div>
+    <div class="item"><h3>Red Hat Certified System Administrator (RHCSA)</h3></div>
+    <div class="item"><h3>Certified Kubernetes Administrator (CKA)</h3></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>I’m open to DevOps, cloud and Linux engineering roles in Kerala, Bangalore and Chennai. The quickest way to reach me is <a href="mailto:YOUR-EMAIL@example.com">email</a>.</p>
+  </section>
+</main>
+<footer>© 2026 Rahul</footer>
+</body>
+</html>
